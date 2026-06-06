@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [POMTestExecution]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.sdet.extentlisteners.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" name="itemsArePresent(failed)" verbose="0">
+    <classes>
+      <class name="com.sdet.testcases.itemsArePresent">
+        <methods>
+          <include name="itemsPresent" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.sdet.testcases.itemsArePresent -->
+    </classes>
+  </test> <!-- itemsArePresent(failed) -->
+  <test thread-count="5" name="printAllElements(failed)" verbose="0">
+    <classes>
+      <class name="com.sdet.testcases.printAllElements">
+        <methods>
+          <include name="printAll" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.sdet.testcases.printAllElements -->
+    </classes>
+  </test> <!-- printAllElements(failed) -->
+  <test thread-count="5" name="searchBox(failed)" verbose="0">
+    <classes>
+      <class name="com.sdet.testcases.searchBox">
+        <methods>
+          <include name="search" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.sdet.testcases.searchBox -->
+    </classes>
+  </test> <!-- searchBox(failed) -->
+  <test thread-count="5" name="priceComparison(failed)" verbose="0">
+    <classes>
+      <class name="com.sdet.testcases.priceComparison">
+        <methods>
+          <include name="priceCompare" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.sdet.testcases.priceComparison -->
+    </classes>
+  </test> <!-- priceComparison(failed) -->
+  <test thread-count="5" name="requestRestAssured(failed)" verbose="0">
+    <classes>
+      <class name="com.sdet.testcases.requestRestAssured">
+        <methods>
+          <include name="requestValidation" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.sdet.testcases.requestRestAssured -->
+    </classes>
+  </test> <!-- requestRestAssured(failed) -->
+</suite> <!-- Failed suite [POMTestExecution] -->

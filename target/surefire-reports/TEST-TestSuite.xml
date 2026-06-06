@@ -1,0 +1,1919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="71.689" tests="14" errors="0" skipped="5" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\seleniumTesting\POMTestExecution\target\test-classes;C:\seleniumTesting\POMTestExecution\target\classes;C:\Users\green\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\green\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\green\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-java\4.39.0\selenium-java-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-api\4.39.0\selenium-api-4.39.0.jar;C:\Users\green\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.39.0\selenium-chrome-driver-4.39.0.jar;C:\Users\green\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.39.0\selenium-chromium-driver-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-json\4.39.0\selenium-json-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.39.0\selenium-manager-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.39.0\selenium-devtools-v141-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.39.0\selenium-devtools-v142-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.39.0\selenium-devtools-v143-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.39.0\selenium-edge-driver-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.39.0\selenium-firefox-driver-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-http\4.39.0\selenium-http-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.39.0\selenium-ie-driver-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.39.0\selenium-remote-driver-4.39.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-api\1.56.0\opentelemetry-api-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-context\1.56.0\opentelemetry-context-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-common\1.56.0\opentelemetry-common-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.56.0\opentelemetry-exporter-logging-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.56.0\opentelemetry-sdk-common-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.56.0\opentelemetry-sdk-extension-autoconfigure-spi-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.56.0\opentelemetry-sdk-extension-autoconfigure-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.56.0\opentelemetry-sdk-trace-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.56.0\opentelemetry-sdk-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.56.0\opentelemetry-sdk-metrics-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.56.0\opentelemetry-sdk-logs-1.56.0.jar;C:\Users\green\.m2\repository\net\bytebuddy\byte-buddy\1.18.2\byte-buddy-1.18.2.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-os\4.39.0\selenium-os-4.39.0.jar;C:\Users\green\.m2\repository\org\apache\commons\commons-exec\1.6.0\commons-exec-1.6.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.39.0\selenium-safari-driver-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-support\4.39.0\selenium-support-4.39.0.jar;C:\Users\green\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\green\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\green\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\green\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\green\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\green\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\green\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\green\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\green\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\green\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\green\.m2\repository\com\google\inject\guice\7.0.0\guice-7.0.0.jar;C:\Users\green\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\green\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\green\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\green\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\green\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\green\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\green\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\green\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\green\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\green\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.3\webdrivermanager-6.3.3.jar;C:\Users\green\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\green\.m2\repository\com\github\docker-java\docker-java\3.6.0\docker-java-3.6.0.jar;C:\Users\green\.m2\repository\com\github\docker-java\docker-java-core\3.6.0\docker-java-core-3.6.0.jar;C:\Users\green\.m2\repository\com\github\docker-java\docker-java-api\3.6.0\docker-java-api-3.6.0.jar;C:\Users\green\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.2\jackson-annotations-2.19.2.jar;C:\Users\green\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.2\jackson-databind-2.19.2.jar;C:\Users\green\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.2\jackson-core-2.19.2.jar;C:\Users\green\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\green\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.6.0\docker-java-transport-httpclient5-3.6.0.jar;C:\Users\green\.m2\repository\com\github\docker-java\docker-java-transport\3.6.0\docker-java-transport-3.6.0.jar;C:\Users\green\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\green\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\green\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\green\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\green\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\green\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\green\.m2\repository\org\slf4j\slf4j-simple\2.0.17\slf4j-simple-2.0.17.jar;C:\Users\green\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\green\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\green\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\green\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\green\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\green\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\green\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\green\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\green\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\green\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.0\log4j-core-2.26.0.jar;C:\Users\green\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.0\log4j-api-2.26.0.jar;C:\Users\green\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;C:\Users\green\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;C:\Users\green\.m2\repository\org\apache\poi\poi\4.1.1\poi-4.1.1.jar;C:\Users\green\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\green\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\green\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\green\.m2\repository\org\apache\poi\poi-ooxml\4.1.1\poi-ooxml-4.1.1.jar;C:\Users\green\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\green\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\green\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\green\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\green\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.1\poi-ooxml-schemas-4.1.1.jar;C:\Users\green\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\green\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\green\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\green\.m2\repository\org\projectlombok\lombok\1.18.42\lombok-1.18.42.jar;C:\Users\green\.m2\repository\org\freemarker\freemarker\2.3.34\freemarker-2.3.34.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\green\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\green\AppData\Local\Temp\surefire4592899595685455097\surefirebooter-20260605195423964_3.jar C:\Users\green\AppData\Local\Temp\surefire4592899595685455097 2026-06-05T19-54-23_832-jvmRun1 surefire-20260605195423964_1tmp surefire_0-20260605195423964_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\seleniumTesting\POMTestExecution\target\test-classes;C:\seleniumTesting\POMTestExecution\target\classes;C:\Users\green\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\green\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\green\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-java\4.39.0\selenium-java-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-api\4.39.0\selenium-api-4.39.0.jar;C:\Users\green\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.39.0\selenium-chrome-driver-4.39.0.jar;C:\Users\green\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.39.0\selenium-chromium-driver-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-json\4.39.0\selenium-json-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.39.0\selenium-manager-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v141\4.39.0\selenium-devtools-v141-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v142\4.39.0\selenium-devtools-v142-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v143\4.39.0\selenium-devtools-v143-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.39.0\selenium-edge-driver-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.39.0\selenium-firefox-driver-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-http\4.39.0\selenium-http-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.39.0\selenium-ie-driver-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.39.0\selenium-remote-driver-4.39.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-api\1.56.0\opentelemetry-api-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-context\1.56.0\opentelemetry-context-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-common\1.56.0\opentelemetry-common-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.56.0\opentelemetry-exporter-logging-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.56.0\opentelemetry-sdk-common-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.56.0\opentelemetry-sdk-extension-autoconfigure-spi-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.56.0\opentelemetry-sdk-extension-autoconfigure-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.56.0\opentelemetry-sdk-trace-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.56.0\opentelemetry-sdk-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.56.0\opentelemetry-sdk-metrics-1.56.0.jar;C:\Users\green\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.56.0\opentelemetry-sdk-logs-1.56.0.jar;C:\Users\green\.m2\repository\net\bytebuddy\byte-buddy\1.18.2\byte-buddy-1.18.2.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-os\4.39.0\selenium-os-4.39.0.jar;C:\Users\green\.m2\repository\org\apache\commons\commons-exec\1.6.0\commons-exec-1.6.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.39.0\selenium-safari-driver-4.39.0.jar;C:\Users\green\.m2\repository\org\seleniumhq\selenium\selenium-support\4.39.0\selenium-support-4.39.0.jar;C:\Users\green\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\green\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\green\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\green\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\green\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\green\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\green\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\green\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\green\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\green\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\green\.m2\repository\com\google\inject\guice\7.0.0\guice-7.0.0.jar;C:\Users\green\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\green\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\green\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\green\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\green\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\green\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\green\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\green\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\green\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\green\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.3\webdrivermanager-6.3.3.jar;C:\Users\green\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\green\.m2\repository\com\github\docker-java\docker-java\3.6.0\docker-java-3.6.0.jar;C:\Users\green\.m2\repository\com\github\docker-java\docker-java-core\3.6.0\docker-java-core-3.6.0.jar;C:\Users\green\.m2\repository\com\github\docker-java\docker-java-api\3.6.0\docker-java-api-3.6.0.jar;C:\Users\green\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.2\jackson-annotations-2.19.2.jar;C:\Users\green\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.2\jackson-databind-2.19.2.jar;C:\Users\green\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.2\jackson-core-2.19.2.jar;C:\Users\green\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\green\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.6.0\docker-java-transport-httpclient5-3.6.0.jar;C:\Users\green\.m2\repository\com\github\docker-java\docker-java-transport\3.6.0\docker-java-transport-3.6.0.jar;C:\Users\green\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\green\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\green\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\green\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\green\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\green\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\green\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\green\.m2\repository\org\slf4j\slf4j-simple\2.0.17\slf4j-simple-2.0.17.jar;C:\Users\green\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\green\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\green\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\green\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\green\.m2\repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;C:\Users\green\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\green\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\green\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\green\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\green\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.0\log4j-core-2.26.0.jar;C:\Users\green\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.0\log4j-api-2.26.0.jar;C:\Users\green\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;C:\Users\green\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;C:\Users\green\.m2\repository\org\apache\poi\poi\4.1.1\poi-4.1.1.jar;C:\Users\green\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\green\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\green\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\green\.m2\repository\org\apache\poi\poi-ooxml\4.1.1\poi-ooxml-4.1.1.jar;C:\Users\green\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\green\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\green\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\green\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\green\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.1\poi-ooxml-schemas-4.1.1.jar;C:\Users\green\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\green\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\green\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\green\.m2\repository\org\projectlombok\lombok\1.18.42\lombok-1.18.42.jar;C:\Users\green\.m2\repository\org\freemarker\freemarker\2.3.34\freemarker-2.3.34.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\green"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Users\green\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\seleniumTesting\POMTestExecution"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\green\AppData\Local\Temp\surefire4592899595685455097\surefirebooter-20260605195423964_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+7-LTS"/>
+    <property name="user.name" value="green"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.10+7"/>
+    <property name="localRepository" value="C:\Users\green\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\green\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="C:\seleniumTesting\POMTestExecution"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="C:\Users\green\.cache\selenium\geckodriver\win64\0.37.0\geckodriver.exe"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\green\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/green/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638/jre/bin/server;C:/Users/green/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638/jre/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-25.0.2\bin;C:\Program Files\apache-maven-3.9.14\bin;C:\Users\green\AppData\Local\Microsoft\WindowsApps;C:\Users\green\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\green\AppData\Local\Programs\Git\cmd;C:\WINDOWS\System32;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.10+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="itemsPresent[N, chrome](1)" classname="com.sdet.testcases.itemsArePresent" time="0.0">
+    <skipped message="Skipping chrome itemsArePresent execution as the run mode is NO"/>
+    <system-out><![CDATA[Skipping chrome itemsArePresent execution as the run mode is NO
+]]></system-out>
+  </testcase>
+  <testcase name="itemsPresent[Y, chrome](2)" classname="com.sdet.testcases.itemsArePresent" time="4.912">
+    <system-out><![CDATA[Starting itemsArePresent--------------
+Chrome launched 
+Navigated to: https://www.microsoft.com/en-us/
+SearchOnAll: //div[@class='uhf-overflow-menu-items']/a
+9
+Microsoft 365 is Present
+Azure is Present
+Copilot is Present
+Windows is Present
+Surface is Present
+XBOX is Present
+Deals is Present
+Small Business is Present
+Support is Present
+Finishing itemsArePresent------------------------
+]]></system-out>
+    <system-err><![CDATA[Jun 05, 2026 7:54:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 05, 2026 7:54:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 148.0.7778.217. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.39.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="itemsPresent[Y, firefox](3)" classname="com.sdet.testcases.itemsArePresent" time="6.157">
+    <system-out><![CDATA[Starting itemsArePresent--------------
+Firefox launched 
+Navigated to: https://www.microsoft.com/en-us/
+SearchOnAll: //div[@class='uhf-overflow-menu-items']/a
+9
+Microsoft 365 is Present
+Azure is Present
+Copilot is Present
+Windows is Present
+Surface is Present
+XBOX is Present
+Deals is Present
+Small Business is Present
+Support is Present
+Finishing itemsArePresent------------------------
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\green\.cache\selenium\geckodriver\win64\0.37.0\geckodriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="printAll[Y, chrome](1)" classname="com.sdet.testcases.printAllElements" time="9.07">
+    <system-out><![CDATA[DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/spark.spa.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/spark.spa.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "commons/commons-variables.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "commons/commons-variables.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "commons/commons-macros.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "commons/commons-macros.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/macros/log.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/macros/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
+DEBUG   17807   [freemark] (): "spark/macros/log.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/head.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/head.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/test.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/test.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/exception.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/exception.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/category.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/category.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/device.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/device.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/author.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/author.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/log.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
+DEBUG   17807   [freemark] (): Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+DEBUG   17807   [freemark] (): Loading template for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
+Starting printAllElements------------------------
+Chrome launched 
+Navigated to: https://www.microsoft.com/en-us/
+9
+List Item Text : Microsoft 365
+List Item Text : Azure
+List Item Text : Copilot
+List Item Text : Windows
+List Item Text : Surface
+List Item Text : XBOX
+List Item Text : Deals
+List Item Text : Small Business
+List Item Text : Support
+Finishing printAllElements------------------------
+]]></system-out>
+    <system-err><![CDATA[Jun 05, 2026 7:54:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 05, 2026 7:54:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 148.0.7778.217. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.39.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="printAll[N, chrome](2)" classname="com.sdet.testcases.printAllElements" time="0.0">
+    <skipped message="Skipping chrome printAllElements execution as the run mode is NO"/>
+    <system-out><![CDATA[Skipping chrome printAllElements execution as the run mode is NO
+]]></system-out>
+  </testcase>
+  <testcase name="printAll[Y, firefox](3)" classname="com.sdet.testcases.printAllElements" time="8.51">
+    <system-out><![CDATA[Starting printAllElements------------------------
+Firefox launched 
+Navigated to: https://www.microsoft.com/en-us/
+9
+List Item Text : Microsoft 365
+List Item Text : Azure
+List Item Text : Copilot
+List Item Text : Windows
+List Item Text : Surface
+List Item Text : XBOX
+List Item Text : Deals
+List Item Text : Small Business
+List Item Text : Support
+Finishing printAllElements------------------------
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\green\.cache\selenium\geckodriver\win64\0.37.0\geckodriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="search[Y, chrome, Visual Studio Professional 2026](1)" classname="com.sdet.testcases.searchBox" time="6.527">
+    <system-out><![CDATA[DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/spark.spa.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-variables.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-macros.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/attributes.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/log.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl hasn't changed.
+DEBUG   17807   [freemark] (): "spark/macros/log.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/head.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/navbar.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/test.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl hasn't changed.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/exception.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/category.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/device.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/author.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/log.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/scripts.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl hasn't changed.
+Starting searchBox------------------------
+Chrome launched 
+Navigated to: https://www.microsoft.com/en-us/
+Visual Studio Professional 2026 Found and Clicked
+Finishing searchBox------------------------
+]]></system-out>
+    <system-err><![CDATA[Jun 05, 2026 7:54:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 05, 2026 7:54:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 148.0.7778.217. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.39.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="search[N, chrome, Visual Studio Professional 2026](2)" classname="com.sdet.testcases.searchBox" time="0.0">
+    <skipped message="Skipping chrome searchBox execution as the run mode is NO"/>
+    <system-out><![CDATA[Skipping chrome searchBox execution as the run mode is NO
+]]></system-out>
+  </testcase>
+  <testcase name="search[Y, firefox, Visual Studio Professional 2026](3)" classname="com.sdet.testcases.searchBox" time="8.455">
+    <system-out><![CDATA[Starting searchBox------------------------
+Firefox launched 
+Navigated to: https://www.microsoft.com/en-us/
+Visual Studio Professional 2026 Found and Clicked
+Finishing searchBox------------------------
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\green\.cache\selenium\geckodriver\win64\0.37.0\geckodriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="priceCompare[Y, chrome, Visual Studio Professional 2026](1)" classname="com.sdet.testcases.priceComparison" time="10.78">
+    <system-out><![CDATA[DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/spark.spa.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-variables.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-macros.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/attributes.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/log.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl hasn't changed.
+DEBUG   17807   [freemark] (): "spark/macros/log.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/head.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/navbar.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/test.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl hasn't changed.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/exception.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/category.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/device.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/author.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/log.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/scripts.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl hasn't changed.
+Starting priceComparison------------------------
+Chrome launched 
+Navigated to: https://www.microsoft.com/en-us/
+Visual Studio Professional 2026 Found and Clicked
+Price Stored: $499.00
+switching to frame: purchase-frame
+Cart price Stored: $499.00
+Same price
+Finishing priceComparison------------------------
+]]></system-out>
+    <system-err><![CDATA[Jun 05, 2026 7:55:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 05, 2026 7:55:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 148.0.7778.217. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.39.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="priceCompare[N, chrome, Visual Studio Professional 2026](2)" classname="com.sdet.testcases.priceComparison" time="0.0">
+    <skipped message="Skipping chrome priceComparison execution as the run mode is NO"/>
+    <system-out><![CDATA[Skipping chrome priceComparison execution as the run mode is NO
+]]></system-out>
+  </testcase>
+  <testcase name="priceCompare[Y, firefox, Visual Studio Professional 2026](3)" classname="com.sdet.testcases.priceComparison" time="10.78">
+    <system-out><![CDATA[Starting priceComparison------------------------
+Firefox launched 
+Navigated to: https://www.microsoft.com/en-us/
+Visual Studio Professional 2026 Found and Clicked
+Price Stored: $499.00
+switching to frame: purchase-frame
+Cart price Stored: $499.00
+Same price
+Finishing priceComparison------------------------
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\green\.cache\selenium\geckodriver\win64\0.37.0\geckodriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="requestValidation[Y](1)" classname="com.sdet.testcases.requestRestAssured" time="2.42">
+    <system-out><![CDATA[DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/spark.spa.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-variables.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-macros.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/attributes.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/log.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl hasn't changed.
+DEBUG   17807   [freemark] (): "spark/macros/log.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/head.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/navbar.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/test.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl hasn't changed.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/exception.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/category.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/device.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/author.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/log.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+DEBUG   17807   [freemark] (): "spark/partials/scripts.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl hasn't changed.
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js_en_US.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+DEBUG   17807   [freemark] (): TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+DEBUG   17807   [freemark] (): "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/green/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl hasn't changed.
+Starting requestRestAssured------------------------
+Starting requestRestAssured------------------------
+Request method:	GET
+Request URI:	https://pokeapi.co/api/v2/pokemon?limit=300&name
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sat, 06 Jun 2026 01:55:33 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+access-control-expose-headers: X-PokeAPI-Hash,X-PokeAPI-Deploy-Date
+Cache-Control: public, max-age=86400, s-maxage=86400
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3oKNre%2F4VTW7FrVgh%2FWarsm5cb8CXe%2BzP2%2FL5rKEtUXCFH3UbeWZ%2FmHpwk4%2FIaB%2BoQI2NWDEkt0gPlF8Tj2lYzJK%2Bm0%2F9t9Fo3jXO9KxJ7tAGA6GEpgiBVDdW15G"}]}
+etag: W/"4db3-CobcmpBL7bco8fzCjRO5qAVEa1Q"
+function-execution-id: 38posxnxdnr1
+Server: cloudflare
+strict-transport-security: max-age=31556926
+x-cloud-trace-context: eb6d1abcad4b2fa684a9b530354b8e25
+x-country-code: US
+x-pokeapi-deploy-date: 1779716501
+x-pokeapi-hash: 3878ef1731c032833151f785b56a86190812e0ca
+x-powered-by: Express
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-served-by: cache-dfw-kdfw8210134-DFW
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1780690198.298017,VS0,VE331
+vary: Accept-Encoding,cookie,need-authorization, x-fh-requested-host, accept-encoding
+alt-svc: h3=":443"; ma=86400
+Age: 20735
+cf-cache-status: HIT
+Content-Encoding: gzip
+CF-RAY: a073cba87ef95060-DFW
+
+{
+    "count": 1350,
+    "next": "https://pokeapi.co/api/v2/pokemon?offset=300&limit=300",
+    "previous": null,
+    "results": [
+        {
+            "name": "bulbasaur",
+            "url": "https://pokeapi.co/api/v2/pokemon/1/"
+        },
+        {
+            "name": "ivysaur",
+            "url": "https://pokeapi.co/api/v2/pokemon/2/"
+        },
+        {
+            "name": "venusaur",
+            "url": "https://pokeapi.co/api/v2/pokemon/3/"
+        },
+        {
+            "name": "charmander",
+            "url": "https://pokeapi.co/api/v2/pokemon/4/"
+        },
+        {
+            "name": "charmeleon",
+            "url": "https://pokeapi.co/api/v2/pokemon/5/"
+        },
+        {
+            "name": "charizard",
+            "url": "https://pokeapi.co/api/v2/pokemon/6/"
+        },
+        {
+            "name": "squirtle",
+            "url": "https://pokeapi.co/api/v2/pokemon/7/"
+        },
+        {
+            "name": "wartortle",
+            "url": "https://pokeapi.co/api/v2/pokemon/8/"
+        },
+        {
+            "name": "blastoise",
+            "url": "https://pokeapi.co/api/v2/pokemon/9/"
+        },
+        {
+            "name": "caterpie",
+            "url": "https://pokeapi.co/api/v2/pokemon/10/"
+        },
+        {
+            "name": "metapod",
+            "url": "https://pokeapi.co/api/v2/pokemon/11/"
+        },
+        {
+            "name": "butterfree",
+            "url": "https://pokeapi.co/api/v2/pokemon/12/"
+        },
+        {
+            "name": "weedle",
+            "url": "https://pokeapi.co/api/v2/pokemon/13/"
+        },
+        {
+            "name": "kakuna",
+            "url": "https://pokeapi.co/api/v2/pokemon/14/"
+        },
+        {
+            "name": "beedrill",
+            "url": "https://pokeapi.co/api/v2/pokemon/15/"
+        },
+        {
+            "name": "pidgey",
+            "url": "https://pokeapi.co/api/v2/pokemon/16/"
+        },
+        {
+            "name": "pidgeotto",
+            "url": "https://pokeapi.co/api/v2/pokemon/17/"
+        },
+        {
+            "name": "pidgeot",
+            "url": "https://pokeapi.co/api/v2/pokemon/18/"
+        },
+        {
+            "name": "rattata",
+            "url": "https://pokeapi.co/api/v2/pokemon/19/"
+        },
+        {
+            "name": "raticate",
+            "url": "https://pokeapi.co/api/v2/pokemon/20/"
+        },
+        {
+            "name": "spearow",
+            "url": "https://pokeapi.co/api/v2/pokemon/21/"
+        },
+        {
+            "name": "fearow",
+            "url": "https://pokeapi.co/api/v2/pokemon/22/"
+        },
+        {
+            "name": "ekans",
+            "url": "https://pokeapi.co/api/v2/pokemon/23/"
+        },
+        {
+            "name": "arbok",
+            "url": "https://pokeapi.co/api/v2/pokemon/24/"
+        },
+        {
+            "name": "pikachu",
+            "url": "https://pokeapi.co/api/v2/pokemon/25/"
+        },
+        {
+            "name": "raichu",
+            "url": "https://pokeapi.co/api/v2/pokemon/26/"
+        },
+        {
+            "name": "sandshrew",
+            "url": "https://pokeapi.co/api/v2/pokemon/27/"
+        },
+        {
+            "name": "sandslash",
+            "url": "https://pokeapi.co/api/v2/pokemon/28/"
+        },
+        {
+            "name": "nidoran-f",
+            "url": "https://pokeapi.co/api/v2/pokemon/29/"
+        },
+        {
+            "name": "nidorina",
+            "url": "https://pokeapi.co/api/v2/pokemon/30/"
+        },
+        {
+            "name": "nidoqueen",
+            "url": "https://pokeapi.co/api/v2/pokemon/31/"
+        },
+        {
+            "name": "nidoran-m",
+            "url": "https://pokeapi.co/api/v2/pokemon/32/"
+        },
+        {
+            "name": "nidorino",
+            "url": "https://pokeapi.co/api/v2/pokemon/33/"
+        },
+        {
+            "name": "nidoking",
+            "url": "https://pokeapi.co/api/v2/pokemon/34/"
+        },
+        {
+            "name": "clefairy",
+            "url": "https://pokeapi.co/api/v2/pokemon/35/"
+        },
+        {
+            "name": "clefable",
+            "url": "https://pokeapi.co/api/v2/pokemon/36/"
+        },
+        {
+            "name": "vulpix",
+            "url": "https://pokeapi.co/api/v2/pokemon/37/"
+        },
+        {
+            "name": "ninetales",
+            "url": "https://pokeapi.co/api/v2/pokemon/38/"
+        },
+        {
+            "name": "jigglypuff",
+            "url": "https://pokeapi.co/api/v2/pokemon/39/"
+        },
+        {
+            "name": "wigglytuff",
+            "url": "https://pokeapi.co/api/v2/pokemon/40/"
+        },
+        {
+            "name": "zubat",
+            "url": "https://pokeapi.co/api/v2/pokemon/41/"
+        },
+        {
+            "name": "golbat",
+            "url": "https://pokeapi.co/api/v2/pokemon/42/"
+        },
+        {
+            "name": "oddish",
+            "url": "https://pokeapi.co/api/v2/pokemon/43/"
+        },
+        {
+            "name": "gloom",
+            "url": "https://pokeapi.co/api/v2/pokemon/44/"
+        },
+        {
+            "name": "vileplume",
+            "url": "https://pokeapi.co/api/v2/pokemon/45/"
+        },
+        {
+            "name": "paras",
+            "url": "https://pokeapi.co/api/v2/pokemon/46/"
+        },
+        {
+            "name": "parasect",
+            "url": "https://pokeapi.co/api/v2/pokemon/47/"
+        },
+        {
+            "name": "venonat",
+            "url": "https://pokeapi.co/api/v2/pokemon/48/"
+        },
+        {
+            "name": "venomoth",
+            "url": "https://pokeapi.co/api/v2/pokemon/49/"
+        },
+        {
+            "name": "diglett",
+            "url": "https://pokeapi.co/api/v2/pokemon/50/"
+        },
+        {
+            "name": "dugtrio",
+            "url": "https://pokeapi.co/api/v2/pokemon/51/"
+        },
+        {
+            "name": "meowth",
+            "url": "https://pokeapi.co/api/v2/pokemon/52/"
+        },
+        {
+            "name": "persian",
+            "url": "https://pokeapi.co/api/v2/pokemon/53/"
+        },
+        {
+            "name": "psyduck",
+            "url": "https://pokeapi.co/api/v2/pokemon/54/"
+        },
+        {
+            "name": "golduck",
+            "url": "https://pokeapi.co/api/v2/pokemon/55/"
+        },
+        {
+            "name": "mankey",
+            "url": "https://pokeapi.co/api/v2/pokemon/56/"
+        },
+        {
+            "name": "primeape",
+            "url": "https://pokeapi.co/api/v2/pokemon/57/"
+        },
+        {
+            "name": "growlithe",
+            "url": "https://pokeapi.co/api/v2/pokemon/58/"
+        },
+        {
+            "name": "arcanine",
+            "url": "https://pokeapi.co/api/v2/pokemon/59/"
+        },
+        {
+            "name": "poliwag",
+            "url": "https://pokeapi.co/api/v2/pokemon/60/"
+        },
+        {
+            "name": "poliwhirl",
+            "url": "https://pokeapi.co/api/v2/pokemon/61/"
+        },
+        {
+            "name": "poliwrath",
+            "url": "https://pokeapi.co/api/v2/pokemon/62/"
+        },
+        {
+            "name": "abra",
+            "url": "https://pokeapi.co/api/v2/pokemon/63/"
+        },
+        {
+            "name": "kadabra",
+            "url": "https://pokeapi.co/api/v2/pokemon/64/"
+        },
+        {
+            "name": "alakazam",
+            "url": "https://pokeapi.co/api/v2/pokemon/65/"
+        },
+        {
+            "name": "machop",
+            "url": "https://pokeapi.co/api/v2/pokemon/66/"
+        },
+        {
+            "name": "machoke",
+            "url": "https://pokeapi.co/api/v2/pokemon/67/"
+        },
+        {
+            "name": "machamp",
+            "url": "https://pokeapi.co/api/v2/pokemon/68/"
+        },
+        {
+            "name": "bellsprout",
+            "url": "https://pokeapi.co/api/v2/pokemon/69/"
+        },
+        {
+            "name": "weepinbell",
+            "url": "https://pokeapi.co/api/v2/pokemon/70/"
+        },
+        {
+            "name": "victreebel",
+            "url": "https://pokeapi.co/api/v2/pokemon/71/"
+        },
+        {
+            "name": "tentacool",
+            "url": "https://pokeapi.co/api/v2/pokemon/72/"
+        },
+        {
+            "name": "tentacruel",
+            "url": "https://pokeapi.co/api/v2/pokemon/73/"
+        },
+        {
+            "name": "geodude",
+            "url": "https://pokeapi.co/api/v2/pokemon/74/"
+        },
+        {
+            "name": "graveler",
+            "url": "https://pokeapi.co/api/v2/pokemon/75/"
+        },
+        {
+            "name": "golem",
+            "url": "https://pokeapi.co/api/v2/pokemon/76/"
+        },
+        {
+            "name": "ponyta",
+            "url": "https://pokeapi.co/api/v2/pokemon/77/"
+        },
+        {
+            "name": "rapidash",
+            "url": "https://pokeapi.co/api/v2/pokemon/78/"
+        },
+        {
+            "name": "slowpoke",
+            "url": "https://pokeapi.co/api/v2/pokemon/79/"
+        },
+        {
+            "name": "slowbro",
+            "url": "https://pokeapi.co/api/v2/pokemon/80/"
+        },
+        {
+            "name": "magnemite",
+            "url": "https://pokeapi.co/api/v2/pokemon/81/"
+        },
+        {
+            "name": "magneton",
+            "url": "https://pokeapi.co/api/v2/pokemon/82/"
+        },
+        {
+            "name": "farfetchd",
+            "url": "https://pokeapi.co/api/v2/pokemon/83/"
+        },
+        {
+            "name": "doduo",
+            "url": "https://pokeapi.co/api/v2/pokemon/84/"
+        },
+        {
+            "name": "dodrio",
+            "url": "https://pokeapi.co/api/v2/pokemon/85/"
+        },
+        {
+            "name": "seel",
+            "url": "https://pokeapi.co/api/v2/pokemon/86/"
+        },
+        {
+            "name": "dewgong",
+            "url": "https://pokeapi.co/api/v2/pokemon/87/"
+        },
+        {
+            "name": "grimer",
+            "url": "https://pokeapi.co/api/v2/pokemon/88/"
+        },
+        {
+            "name": "muk",
+            "url": "https://pokeapi.co/api/v2/pokemon/89/"
+        },
+        {
+            "name": "shellder",
+            "url": "https://pokeapi.co/api/v2/pokemon/90/"
+        },
+        {
+            "name": "cloyster",
+            "url": "https://pokeapi.co/api/v2/pokemon/91/"
+        },
+        {
+            "name": "gastly",
+            "url": "https://pokeapi.co/api/v2/pokemon/92/"
+        },
+        {
+            "name": "haunter",
+            "url": "https://pokeapi.co/api/v2/pokemon/93/"
+        },
+        {
+            "name": "gengar",
+            "url": "https://pokeapi.co/api/v2/pokemon/94/"
+        },
+        {
+            "name": "onix",
+            "url": "https://pokeapi.co/api/v2/pokemon/95/"
+        },
+        {
+            "name": "drowzee",
+            "url": "https://pokeapi.co/api/v2/pokemon/96/"
+        },
+        {
+            "name": "hypno",
+            "url": "https://pokeapi.co/api/v2/pokemon/97/"
+        },
+        {
+            "name": "krabby",
+            "url": "https://pokeapi.co/api/v2/pokemon/98/"
+        },
+        {
+            "name": "kingler",
+            "url": "https://pokeapi.co/api/v2/pokemon/99/"
+        },
+        {
+            "name": "voltorb",
+            "url": "https://pokeapi.co/api/v2/pokemon/100/"
+        },
+        {
+            "name": "electrode",
+            "url": "https://pokeapi.co/api/v2/pokemon/101/"
+        },
+        {
+            "name": "exeggcute",
+            "url": "https://pokeapi.co/api/v2/pokemon/102/"
+        },
+        {
+            "name": "exeggutor",
+            "url": "https://pokeapi.co/api/v2/pokemon/103/"
+        },
+        {
+            "name": "cubone",
+            "url": "https://pokeapi.co/api/v2/pokemon/104/"
+        },
+        {
+            "name": "marowak",
+            "url": "https://pokeapi.co/api/v2/pokemon/105/"
+        },
+        {
+            "name": "hitmonlee",
+            "url": "https://pokeapi.co/api/v2/pokemon/106/"
+        },
+        {
+            "name": "hitmonchan",
+            "url": "https://pokeapi.co/api/v2/pokemon/107/"
+        },
+        {
+            "name": "lickitung",
+            "url": "https://pokeapi.co/api/v2/pokemon/108/"
+        },
+        {
+            "name": "koffing",
+            "url": "https://pokeapi.co/api/v2/pokemon/109/"
+        },
+        {
+            "name": "weezing",
+            "url": "https://pokeapi.co/api/v2/pokemon/110/"
+        },
+        {
+            "name": "rhyhorn",
+            "url": "https://pokeapi.co/api/v2/pokemon/111/"
+        },
+        {
+            "name": "rhydon",
+            "url": "https://pokeapi.co/api/v2/pokemon/112/"
+        },
+        {
+            "name": "chansey",
+            "url": "https://pokeapi.co/api/v2/pokemon/113/"
+        },
+        {
+            "name": "tangela",
+            "url": "https://pokeapi.co/api/v2/pokemon/114/"
+        },
+        {
+            "name": "kangaskhan",
+            "url": "https://pokeapi.co/api/v2/pokemon/115/"
+        },
+        {
+            "name": "horsea",
+            "url": "https://pokeapi.co/api/v2/pokemon/116/"
+        },
+        {
+            "name": "seadra",
+            "url": "https://pokeapi.co/api/v2/pokemon/117/"
+        },
+        {
+            "name": "goldeen",
+            "url": "https://pokeapi.co/api/v2/pokemon/118/"
+        },
+        {
+            "name": "seaking",
+            "url": "https://pokeapi.co/api/v2/pokemon/119/"
+        },
+        {
+            "name": "staryu",
+            "url": "https://pokeapi.co/api/v2/pokemon/120/"
+        },
+        {
+            "name": "starmie",
+            "url": "https://pokeapi.co/api/v2/pokemon/121/"
+        },
+        {
+            "name": "mr-mime",
+            "url": "https://pokeapi.co/api/v2/pokemon/122/"
+        },
+        {
+            "name": "scyther",
+            "url": "https://pokeapi.co/api/v2/pokemon/123/"
+        },
+        {
+            "name": "jynx",
+            "url": "https://pokeapi.co/api/v2/pokemon/124/"
+        },
+        {
+            "name": "electabuzz",
+            "url": "https://pokeapi.co/api/v2/pokemon/125/"
+        },
+        {
+            "name": "magmar",
+            "url": "https://pokeapi.co/api/v2/pokemon/126/"
+        },
+        {
+            "name": "pinsir",
+            "url": "https://pokeapi.co/api/v2/pokemon/127/"
+        },
+        {
+            "name": "tauros",
+            "url": "https://pokeapi.co/api/v2/pokemon/128/"
+        },
+        {
+            "name": "magikarp",
+            "url": "https://pokeapi.co/api/v2/pokemon/129/"
+        },
+        {
+            "name": "gyarados",
+            "url": "https://pokeapi.co/api/v2/pokemon/130/"
+        },
+        {
+            "name": "lapras",
+            "url": "https://pokeapi.co/api/v2/pokemon/131/"
+        },
+        {
+            "name": "ditto",
+            "url": "https://pokeapi.co/api/v2/pokemon/132/"
+        },
+        {
+            "name": "eevee",
+            "url": "https://pokeapi.co/api/v2/pokemon/133/"
+        },
+        {
+            "name": "vaporeon",
+            "url": "https://pokeapi.co/api/v2/pokemon/134/"
+        },
+        {
+            "name": "jolteon",
+            "url": "https://pokeapi.co/api/v2/pokemon/135/"
+        },
+        {
+            "name": "flareon",
+            "url": "https://pokeapi.co/api/v2/pokemon/136/"
+        },
+        {
+            "name": "porygon",
+            "url": "https://pokeapi.co/api/v2/pokemon/137/"
+        },
+        {
+            "name": "omanyte",
+            "url": "https://pokeapi.co/api/v2/pokemon/138/"
+        },
+        {
+            "name": "omastar",
+            "url": "https://pokeapi.co/api/v2/pokemon/139/"
+        },
+        {
+            "name": "kabuto",
+            "url": "https://pokeapi.co/api/v2/pokemon/140/"
+        },
+        {
+            "name": "kabutops",
+            "url": "https://pokeapi.co/api/v2/pokemon/141/"
+        },
+        {
+            "name": "aerodactyl",
+            "url": "https://pokeapi.co/api/v2/pokemon/142/"
+        },
+        {
+            "name": "snorlax",
+            "url": "https://pokeapi.co/api/v2/pokemon/143/"
+        },
+        {
+            "name": "articuno",
+            "url": "https://pokeapi.co/api/v2/pokemon/144/"
+        },
+        {
+            "name": "zapdos",
+            "url": "https://pokeapi.co/api/v2/pokemon/145/"
+        },
+        {
+            "name": "moltres",
+            "url": "https://pokeapi.co/api/v2/pokemon/146/"
+        },
+        {
+            "name": "dratini",
+            "url": "https://pokeapi.co/api/v2/pokemon/147/"
+        },
+        {
+            "name": "dragonair",
+            "url": "https://pokeapi.co/api/v2/pokemon/148/"
+        },
+        {
+            "name": "dragonite",
+            "url": "https://pokeapi.co/api/v2/pokemon/149/"
+        },
+        {
+            "name": "mewtwo",
+            "url": "https://pokeapi.co/api/v2/pokemon/150/"
+        },
+        {
+            "name": "mew",
+            "url": "https://pokeapi.co/api/v2/pokemon/151/"
+        },
+        {
+            "name": "chikorita",
+            "url": "https://pokeapi.co/api/v2/pokemon/152/"
+        },
+        {
+            "name": "bayleef",
+            "url": "https://pokeapi.co/api/v2/pokemon/153/"
+        },
+        {
+            "name": "meganium",
+            "url": "https://pokeapi.co/api/v2/pokemon/154/"
+        },
+        {
+            "name": "cyndaquil",
+            "url": "https://pokeapi.co/api/v2/pokemon/155/"
+        },
+        {
+            "name": "quilava",
+            "url": "https://pokeapi.co/api/v2/pokemon/156/"
+        },
+        {
+            "name": "typhlosion",
+            "url": "https://pokeapi.co/api/v2/pokemon/157/"
+        },
+        {
+            "name": "totodile",
+            "url": "https://pokeapi.co/api/v2/pokemon/158/"
+        },
+        {
+            "name": "croconaw",
+            "url": "https://pokeapi.co/api/v2/pokemon/159/"
+        },
+        {
+            "name": "feraligatr",
+            "url": "https://pokeapi.co/api/v2/pokemon/160/"
+        },
+        {
+            "name": "sentret",
+            "url": "https://pokeapi.co/api/v2/pokemon/161/"
+        },
+        {
+            "name": "furret",
+            "url": "https://pokeapi.co/api/v2/pokemon/162/"
+        },
+        {
+            "name": "hoothoot",
+            "url": "https://pokeapi.co/api/v2/pokemon/163/"
+        },
+        {
+            "name": "noctowl",
+            "url": "https://pokeapi.co/api/v2/pokemon/164/"
+        },
+        {
+            "name": "ledyba",
+            "url": "https://pokeapi.co/api/v2/pokemon/165/"
+        },
+        {
+            "name": "ledian",
+            "url": "https://pokeapi.co/api/v2/pokemon/166/"
+        },
+        {
+            "name": "spinarak",
+            "url": "https://pokeapi.co/api/v2/pokemon/167/"
+        },
+        {
+            "name": "ariados",
+            "url": "https://pokeapi.co/api/v2/pokemon/168/"
+        },
+        {
+            "name": "crobat",
+            "url": "https://pokeapi.co/api/v2/pokemon/169/"
+        },
+        {
+            "name": "chinchou",
+            "url": "https://pokeapi.co/api/v2/pokemon/170/"
+        },
+        {
+            "name": "lanturn",
+            "url": "https://pokeapi.co/api/v2/pokemon/171/"
+        },
+        {
+            "name": "pichu",
+            "url": "https://pokeapi.co/api/v2/pokemon/172/"
+        },
+        {
+            "name": "cleffa",
+            "url": "https://pokeapi.co/api/v2/pokemon/173/"
+        },
+        {
+            "name": "igglybuff",
+            "url": "https://pokeapi.co/api/v2/pokemon/174/"
+        },
+        {
+            "name": "togepi",
+            "url": "https://pokeapi.co/api/v2/pokemon/175/"
+        },
+        {
+            "name": "togetic",
+            "url": "https://pokeapi.co/api/v2/pokemon/176/"
+        },
+        {
+            "name": "natu",
+            "url": "https://pokeapi.co/api/v2/pokemon/177/"
+        },
+        {
+            "name": "xatu",
+            "url": "https://pokeapi.co/api/v2/pokemon/178/"
+        },
+        {
+            "name": "mareep",
+            "url": "https://pokeapi.co/api/v2/pokemon/179/"
+        },
+        {
+            "name": "flaaffy",
+            "url": "https://pokeapi.co/api/v2/pokemon/180/"
+        },
+        {
+            "name": "ampharos",
+            "url": "https://pokeapi.co/api/v2/pokemon/181/"
+        },
+        {
+            "name": "bellossom",
+            "url": "https://pokeapi.co/api/v2/pokemon/182/"
+        },
+        {
+            "name": "marill",
+            "url": "https://pokeapi.co/api/v2/pokemon/183/"
+        },
+        {
+            "name": "azumarill",
+            "url": "https://pokeapi.co/api/v2/pokemon/184/"
+        },
+        {
+            "name": "sudowoodo",
+            "url": "https://pokeapi.co/api/v2/pokemon/185/"
+        },
+        {
+            "name": "politoed",
+            "url": "https://pokeapi.co/api/v2/pokemon/186/"
+        },
+        {
+            "name": "hoppip",
+            "url": "https://pokeapi.co/api/v2/pokemon/187/"
+        },
+        {
+            "name": "skiploom",
+            "url": "https://pokeapi.co/api/v2/pokemon/188/"
+        },
+        {
+            "name": "jumpluff",
+            "url": "https://pokeapi.co/api/v2/pokemon/189/"
+        },
+        {
+            "name": "aipom",
+            "url": "https://pokeapi.co/api/v2/pokemon/190/"
+        },
+        {
+            "name": "sunkern",
+            "url": "https://pokeapi.co/api/v2/pokemon/191/"
+        },
+        {
+            "name": "sunflora",
+            "url": "https://pokeapi.co/api/v2/pokemon/192/"
+        },
+        {
+            "name": "yanma",
+            "url": "https://pokeapi.co/api/v2/pokemon/193/"
+        },
+        {
+            "name": "wooper",
+            "url": "https://pokeapi.co/api/v2/pokemon/194/"
+        },
+        {
+            "name": "quagsire",
+            "url": "https://pokeapi.co/api/v2/pokemon/195/"
+        },
+        {
+            "name": "espeon",
+            "url": "https://pokeapi.co/api/v2/pokemon/196/"
+        },
+        {
+            "name": "umbreon",
+            "url": "https://pokeapi.co/api/v2/pokemon/197/"
+        },
+        {
+            "name": "murkrow",
+            "url": "https://pokeapi.co/api/v2/pokemon/198/"
+        },
+        {
+            "name": "slowking",
+            "url": "https://pokeapi.co/api/v2/pokemon/199/"
+        },
+        {
+            "name": "misdreavus",
+            "url": "https://pokeapi.co/api/v2/pokemon/200/"
+        },
+        {
+            "name": "unown",
+            "url": "https://pokeapi.co/api/v2/pokemon/201/"
+        },
+        {
+            "name": "wobbuffet",
+            "url": "https://pokeapi.co/api/v2/pokemon/202/"
+        },
+        {
+            "name": "girafarig",
+            "url": "https://pokeapi.co/api/v2/pokemon/203/"
+        },
+        {
+            "name": "pineco",
+            "url": "https://pokeapi.co/api/v2/pokemon/204/"
+        },
+        {
+            "name": "forretress",
+            "url": "https://pokeapi.co/api/v2/pokemon/205/"
+        },
+        {
+            "name": "dunsparce",
+            "url": "https://pokeapi.co/api/v2/pokemon/206/"
+        },
+        {
+            "name": "gligar",
+            "url": "https://pokeapi.co/api/v2/pokemon/207/"
+        },
+        {
+            "name": "steelix",
+            "url": "https://pokeapi.co/api/v2/pokemon/208/"
+        },
+        {
+            "name": "snubbull",
+            "url": "https://pokeapi.co/api/v2/pokemon/209/"
+        },
+        {
+            "name": "granbull",
+            "url": "https://pokeapi.co/api/v2/pokemon/210/"
+        },
+        {
+            "name": "qwilfish",
+            "url": "https://pokeapi.co/api/v2/pokemon/211/"
+        },
+        {
+            "name": "scizor",
+            "url": "https://pokeapi.co/api/v2/pokemon/212/"
+        },
+        {
+            "name": "shuckle",
+            "url": "https://pokeapi.co/api/v2/pokemon/213/"
+        },
+        {
+            "name": "heracross",
+            "url": "https://pokeapi.co/api/v2/pokemon/214/"
+        },
+        {
+            "name": "sneasel",
+            "url": "https://pokeapi.co/api/v2/pokemon/215/"
+        },
+        {
+            "name": "teddiursa",
+            "url": "https://pokeapi.co/api/v2/pokemon/216/"
+        },
+        {
+            "name": "ursaring",
+            "url": "https://pokeapi.co/api/v2/pokemon/217/"
+        },
+        {
+            "name": "slugma",
+            "url": "https://pokeapi.co/api/v2/pokemon/218/"
+        },
+        {
+            "name": "magcargo",
+            "url": "https://pokeapi.co/api/v2/pokemon/219/"
+        },
+        {
+            "name": "swinub",
+            "url": "https://pokeapi.co/api/v2/pokemon/220/"
+        },
+        {
+            "name": "piloswine",
+            "url": "https://pokeapi.co/api/v2/pokemon/221/"
+        },
+        {
+            "name": "corsola",
+            "url": "https://pokeapi.co/api/v2/pokemon/222/"
+        },
+        {
+            "name": "remoraid",
+            "url": "https://pokeapi.co/api/v2/pokemon/223/"
+        },
+        {
+            "name": "octillery",
+            "url": "https://pokeapi.co/api/v2/pokemon/224/"
+        },
+        {
+            "name": "delibird",
+            "url": "https://pokeapi.co/api/v2/pokemon/225/"
+        },
+        {
+            "name": "mantine",
+            "url": "https://pokeapi.co/api/v2/pokemon/226/"
+        },
+        {
+            "name": "skarmory",
+            "url": "https://pokeapi.co/api/v2/pokemon/227/"
+        },
+        {
+            "name": "houndour",
+            "url": "https://pokeapi.co/api/v2/pokemon/228/"
+        },
+        {
+            "name": "houndoom",
+            "url": "https://pokeapi.co/api/v2/pokemon/229/"
+        },
+        {
+            "name": "kingdra",
+            "url": "https://pokeapi.co/api/v2/pokemon/230/"
+        },
+        {
+            "name": "phanpy",
+            "url": "https://pokeapi.co/api/v2/pokemon/231/"
+        },
+        {
+            "name": "donphan",
+            "url": "https://pokeapi.co/api/v2/pokemon/232/"
+        },
+        {
+            "name": "porygon2",
+            "url": "https://pokeapi.co/api/v2/pokemon/233/"
+        },
+        {
+            "name": "stantler",
+            "url": "https://pokeapi.co/api/v2/pokemon/234/"
+        },
+        {
+            "name": "smeargle",
+            "url": "https://pokeapi.co/api/v2/pokemon/235/"
+        },
+        {
+            "name": "tyrogue",
+            "url": "https://pokeapi.co/api/v2/pokemon/236/"
+        },
+        {
+            "name": "hitmontop",
+            "url": "https://pokeapi.co/api/v2/pokemon/237/"
+        },
+        {
+            "name": "smoochum",
+            "url": "https://pokeapi.co/api/v2/pokemon/238/"
+        },
+        {
+            "name": "elekid",
+            "url": "https://pokeapi.co/api/v2/pokemon/239/"
+        },
+        {
+            "name": "magby",
+            "url": "https://pokeapi.co/api/v2/pokemon/240/"
+        },
+        {
+            "name": "miltank",
+            "url": "https://pokeapi.co/api/v2/pokemon/241/"
+        },
+        {
+            "name": "blissey",
+            "url": "https://pokeapi.co/api/v2/pokemon/242/"
+        },
+        {
+            "name": "raikou",
+            "url": "https://pokeapi.co/api/v2/pokemon/243/"
+        },
+        {
+            "name": "entei",
+            "url": "https://pokeapi.co/api/v2/pokemon/244/"
+        },
+        {
+            "name": "suicune",
+            "url": "https://pokeapi.co/api/v2/pokemon/245/"
+        },
+        {
+            "name": "larvitar",
+            "url": "https://pokeapi.co/api/v2/pokemon/246/"
+        },
+        {
+            "name": "pupitar",
+            "url": "https://pokeapi.co/api/v2/pokemon/247/"
+        },
+        {
+            "name": "tyranitar",
+            "url": "https://pokeapi.co/api/v2/pokemon/248/"
+        },
+        {
+            "name": "lugia",
+            "url": "https://pokeapi.co/api/v2/pokemon/249/"
+        },
+        {
+            "name": "ho-oh",
+            "url": "https://pokeapi.co/api/v2/pokemon/250/"
+        },
+        {
+            "name": "celebi",
+            "url": "https://pokeapi.co/api/v2/pokemon/251/"
+        },
+        {
+            "name": "treecko",
+            "url": "https://pokeapi.co/api/v2/pokemon/252/"
+        },
+        {
+            "name": "grovyle",
+            "url": "https://pokeapi.co/api/v2/pokemon/253/"
+        },
+        {
+            "name": "sceptile",
+            "url": "https://pokeapi.co/api/v2/pokemon/254/"
+        },
+        {
+            "name": "torchic",
+            "url": "https://pokeapi.co/api/v2/pokemon/255/"
+        },
+        {
+            "name": "combusken",
+            "url": "https://pokeapi.co/api/v2/pokemon/256/"
+        },
+        {
+            "name": "blaziken",
+            "url": "https://pokeapi.co/api/v2/pokemon/257/"
+        },
+        {
+            "name": "mudkip",
+            "url": "https://pokeapi.co/api/v2/pokemon/258/"
+        },
+        {
+            "name": "marshtomp",
+            "url": "https://pokeapi.co/api/v2/pokemon/259/"
+        },
+        {
+            "name": "swampert",
+            "url": "https://pokeapi.co/api/v2/pokemon/260/"
+        },
+        {
+            "name": "poochyena",
+            "url": "https://pokeapi.co/api/v2/pokemon/261/"
+        },
+        {
+            "name": "mightyena",
+            "url": "https://pokeapi.co/api/v2/pokemon/262/"
+        },
+        {
+            "name": "zigzagoon",
+            "url": "https://pokeapi.co/api/v2/pokemon/263/"
+        },
+        {
+            "name": "linoone",
+            "url": "https://pokeapi.co/api/v2/pokemon/264/"
+        },
+        {
+            "name": "wurmple",
+            "url": "https://pokeapi.co/api/v2/pokemon/265/"
+        },
+        {
+            "name": "silcoon",
+            "url": "https://pokeapi.co/api/v2/pokemon/266/"
+        },
+        {
+            "name": "beautifly",
+            "url": "https://pokeapi.co/api/v2/pokemon/267/"
+        },
+        {
+            "name": "cascoon",
+            "url": "https://pokeapi.co/api/v2/pokemon/268/"
+        },
+        {
+            "name": "dustox",
+            "url": "https://pokeapi.co/api/v2/pokemon/269/"
+        },
+        {
+            "name": "lotad",
+            "url": "https://pokeapi.co/api/v2/pokemon/270/"
+        },
+        {
+            "name": "lombre",
+            "url": "https://pokeapi.co/api/v2/pokemon/271/"
+        },
+        {
+            "name": "ludicolo",
+            "url": "https://pokeapi.co/api/v2/pokemon/272/"
+        },
+        {
+            "name": "seedot",
+            "url": "https://pokeapi.co/api/v2/pokemon/273/"
+        },
+        {
+            "name": "nuzleaf",
+            "url": "https://pokeapi.co/api/v2/pokemon/274/"
+        },
+        {
+            "name": "shiftry",
+            "url": "https://pokeapi.co/api/v2/pokemon/275/"
+        },
+        {
+            "name": "taillow",
+            "url": "https://pokeapi.co/api/v2/pokemon/276/"
+        },
+        {
+            "name": "swellow",
+            "url": "https://pokeapi.co/api/v2/pokemon/277/"
+        },
+        {
+            "name": "wingull",
+            "url": "https://pokeapi.co/api/v2/pokemon/278/"
+        },
+        {
+            "name": "pelipper",
+            "url": "https://pokeapi.co/api/v2/pokemon/279/"
+        },
+        {
+            "name": "ralts",
+            "url": "https://pokeapi.co/api/v2/pokemon/280/"
+        },
+        {
+            "name": "kirlia",
+            "url": "https://pokeapi.co/api/v2/pokemon/281/"
+        },
+        {
+            "name": "gardevoir",
+            "url": "https://pokeapi.co/api/v2/pokemon/282/"
+        },
+        {
+            "name": "surskit",
+            "url": "https://pokeapi.co/api/v2/pokemon/283/"
+        },
+        {
+            "name": "masquerain",
+            "url": "https://pokeapi.co/api/v2/pokemon/284/"
+        },
+        {
+            "name": "shroomish",
+            "url": "https://pokeapi.co/api/v2/pokemon/285/"
+        },
+        {
+            "name": "breloom",
+            "url": "https://pokeapi.co/api/v2/pokemon/286/"
+        },
+        {
+            "name": "slakoth",
+            "url": "https://pokeapi.co/api/v2/pokemon/287/"
+        },
+        {
+            "name": "vigoroth",
+            "url": "https://pokeapi.co/api/v2/pokemon/288/"
+        },
+        {
+            "name": "slaking",
+            "url": "https://pokeapi.co/api/v2/pokemon/289/"
+        },
+        {
+            "name": "nincada",
+            "url": "https://pokeapi.co/api/v2/pokemon/290/"
+        },
+        {
+            "name": "ninjask",
+            "url": "https://pokeapi.co/api/v2/pokemon/291/"
+        },
+        {
+            "name": "shedinja",
+            "url": "https://pokeapi.co/api/v2/pokemon/292/"
+        },
+        {
+            "name": "whismur",
+            "url": "https://pokeapi.co/api/v2/pokemon/293/"
+        },
+        {
+            "name": "loudred",
+            "url": "https://pokeapi.co/api/v2/pokemon/294/"
+        },
+        {
+            "name": "exploud",
+            "url": "https://pokeapi.co/api/v2/pokemon/295/"
+        },
+        {
+            "name": "makuhita",
+            "url": "https://pokeapi.co/api/v2/pokemon/296/"
+        },
+        {
+            "name": "hariyama",
+            "url": "https://pokeapi.co/api/v2/pokemon/297/"
+        },
+        {
+            "name": "azurill",
+            "url": "https://pokeapi.co/api/v2/pokemon/298/"
+        },
+        {
+            "name": "nosepass",
+            "url": "https://pokeapi.co/api/v2/pokemon/299/"
+        },
+        {
+            "name": "skitty",
+            "url": "https://pokeapi.co/api/v2/pokemon/300/"
+        }
+    ]
+}
+Pokemon Count Size: 300
+Pokemon ID:7 Name: squirtle
+Pokemon ID:21 Name: spearow
+Pokemon ID:27 Name: sandshrew
+Pokemon ID:28 Name: sandslash
+Pokemon ID:79 Name: slowpoke
+Pokemon ID:80 Name: slowbro
+Pokemon ID:86 Name: seel
+Pokemon ID:90 Name: shellder
+Pokemon ID:117 Name: seadra
+Pokemon ID:119 Name: seaking
+Pokemon ID:120 Name: staryu
+Pokemon ID:121 Name: starmie
+Pokemon ID:123 Name: scyther
+Pokemon ID:143 Name: snorlax
+Pokemon ID:161 Name: sentret
+Pokemon ID:167 Name: spinarak
+Pokemon ID:185 Name: sudowoodo
+Pokemon ID:188 Name: skiploom
+Pokemon ID:191 Name: sunkern
+Pokemon ID:192 Name: sunflora
+Pokemon ID:199 Name: slowking
+Pokemon ID:208 Name: steelix
+Pokemon ID:209 Name: snubbull
+Pokemon ID:212 Name: scizor
+Pokemon ID:213 Name: shuckle
+Pokemon ID:215 Name: sneasel
+Pokemon ID:218 Name: slugma
+Pokemon ID:220 Name: swinub
+Pokemon ID:227 Name: skarmory
+Pokemon ID:234 Name: stantler
+Pokemon ID:235 Name: smeargle
+Pokemon ID:238 Name: smoochum
+Pokemon ID:245 Name: suicune
+Pokemon ID:254 Name: sceptile
+Pokemon ID:260 Name: swampert
+Pokemon ID:266 Name: silcoon
+Pokemon ID:273 Name: seedot
+Pokemon ID:275 Name: shiftry
+Pokemon ID:277 Name: swellow
+Pokemon ID:283 Name: surskit
+Pokemon ID:285 Name: shroomish
+Pokemon ID:287 Name: slakoth
+Pokemon ID:289 Name: slaking
+Pokemon ID:292 Name: shedinja
+Pokemon ID:300 Name: skitty
+Finishing requestRestAssured------------------------
+Finishing requestRestAssured------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="requestValidation[N](2)" classname="com.sdet.testcases.requestRestAssured" time="0.0">
+    <skipped message="Skipping requestRestAssured execution as the run mode is NO"/>
+    <system-out><![CDATA[Skipping requestRestAssured execution as the run mode is NO
+]]></system-out>
+  </testcase>
+</testsuite>

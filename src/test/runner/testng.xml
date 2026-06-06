@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="POMTestExecution">
+	
+	<listeners>
+	<listener class-name="com.sdet.extentlisteners.ExtentListeners"/>
+	</listeners>
+	
+	<test name="itemsArePresent">
+		<classes>
+			<class name="com.sdet.testcases.itemsArePresent" />
+		</classes>
+	</test> <!-- Test1 -->
+
+	<test name="printAllElements">
+		<classes>
+			<class name="com.sdet.testcases.printAllElements" />
+		</classes>
+	</test> <!-- Test2 -->
+
+	<test name="searchBox">
+		<classes>
+			<class name="com.sdet.testcases.searchBox" />
+		</classes>
+	</test> <!-- Test3 -->
+
+	<test name="priceComparison">
+		<classes>
+			<class name="com.sdet.testcases.priceComparison" />
+		</classes>
+	</test> <!-- Test4 -->
+
+	<test name="requestRestAssured">
+		<classes>
+			<class name="com.sdet.testcases.requestRestAssured" />
+		</classes>
+	</test> <!-- Test5 -->
+</suite> <!-- Suite -->

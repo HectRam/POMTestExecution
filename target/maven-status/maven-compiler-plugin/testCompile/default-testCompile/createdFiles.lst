@@ -1,0 +1,9 @@
+com\sdet\testcases\priceComparison.class
+com\sdet\Main\MainTest.class
+com\sdet\testcases\printAllElements.class
+com\sdet\utilities\ExcelReader.class
+com\sdet\testcases\itemsArePresent.class
+com\sdet\utilities\DataUtil.class
+com\sdet\testcases\requestRestAssured.class
+com\sdet\testcases\searchBox.class
+com\sdet\apirequest\ApiRequests.class
