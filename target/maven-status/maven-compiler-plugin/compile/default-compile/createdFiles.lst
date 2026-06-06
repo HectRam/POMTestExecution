@@ -1,7 +1,0 @@
-com\sdet\pages\MainPage.class
-com\sdet\pages\WindowsPage.class
-com\sdet\pages\SoftwareVisualStudioPage.class
-com\sdet\pages\HomePage.class
-com\sdet\pages\CartPage.class
-com\sdet\extentlisteners\ExtentListeners.class
-com\sdet\extentlisteners\ExtentManager.class
