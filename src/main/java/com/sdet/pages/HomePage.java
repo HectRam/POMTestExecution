@@ -64,6 +64,7 @@ public class HomePage extends MainPage {
 					"There are more Menu Items than expected. Actual: " + ListItems.size());
 			log.error("There are more Menu Items than expected. Actual: " + ListItems.size());
 			Assert.fail("There are more Menu Items than expected. Actual: " + ListItems.size());
+			
 		}
 			n=0;
 	}

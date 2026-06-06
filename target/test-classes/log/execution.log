@@ -180,3 +180,186 @@
 [INFO ] 2026-06-05 19:50:06.430 [main] ApiRequests - Finishing requestRestAssured
 [INFO ] 2026-06-05 19:50:06.430 [main] requestRestAssured - Finishing requestRestAssured
 [INFO ] 2026-06-05 19:50:06.431 [main] requestRestAssured - Skipping requestRestAssured execution as the run mode is NO
+[INFO ] 2026-06-05 19:54:25.185 [main] itemsArePresent - Skipping chrome itemsArePresent execution as the run mode is NO
+[INFO ] 2026-06-05 19:54:25.196 [main] itemsArePresent - Starting itemsArePresent
+[INFO ] 2026-06-05 19:54:26.116 [main] MainTest - Chrome launched 
+[INFO ] 2026-06-05 19:54:29.855 [main] MainTest - Navigated to: https://www.microsoft.com/en-us/
+[INFO ] 2026-06-05 19:54:29.912 [main] MainPage - Finding Element : SelectMenuItems_X
+[INFO ] 2026-06-05 19:54:29.921 [main] HomePage - 9
+[INFO ] 2026-06-05 19:54:29.943 [main] HomePage - Microsoft 365 is Present
+[INFO ] 2026-06-05 19:54:29.963 [main] HomePage - Azure is Present
+[INFO ] 2026-06-05 19:54:29.981 [main] HomePage - Copilot is Present
+[INFO ] 2026-06-05 19:54:29.999 [main] HomePage - Windows is Present
+[INFO ] 2026-06-05 19:54:30.017 [main] HomePage - Surface is Present
+[INFO ] 2026-06-05 19:54:30.050 [main] HomePage - XBOX is Present
+[INFO ] 2026-06-05 19:54:30.071 [main] HomePage - Deals is Present
+[INFO ] 2026-06-05 19:54:30.089 [main] HomePage - Small Business is Present
+[INFO ] 2026-06-05 19:54:30.107 [main] HomePage - Support is Present
+[INFO ] 2026-06-05 19:54:30.107 [main] itemsArePresent - Finishing itemsArePresent
+[INFO ] 2026-06-05 19:54:30.244 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:54:30.244 [main] itemsArePresent - Starting itemsArePresent
+[INFO ] 2026-06-05 19:54:32.794 [main] MainTest - Firefox launched 
+[INFO ] 2026-06-05 19:54:35.883 [main] MainTest - Navigated to: https://www.microsoft.com/en-us/
+[INFO ] 2026-06-05 19:54:36.167 [main] MainPage - Finding Element : SelectMenuItems_X
+[INFO ] 2026-06-05 19:54:36.171 [main] HomePage - 9
+[INFO ] 2026-06-05 19:54:36.192 [main] HomePage - Microsoft 365 is Present
+[INFO ] 2026-06-05 19:54:36.264 [main] HomePage - Azure is Present
+[INFO ] 2026-06-05 19:54:36.285 [main] HomePage - Copilot is Present
+[INFO ] 2026-06-05 19:54:36.304 [main] HomePage - Windows is Present
+[INFO ] 2026-06-05 19:54:36.327 [main] HomePage - Surface is Present
+[INFO ] 2026-06-05 19:54:36.345 [main] HomePage - XBOX is Present
+[INFO ] 2026-06-05 19:54:36.364 [main] HomePage - Deals is Present
+[INFO ] 2026-06-05 19:54:36.383 [main] HomePage - Small Business is Present
+[INFO ] 2026-06-05 19:54:36.400 [main] HomePage - Support is Present
+[INFO ] 2026-06-05 19:54:36.400 [main] itemsArePresent - Finishing itemsArePresent
+[INFO ] 2026-06-05 19:54:36.951 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:54:37.144 [main] printAllElements - Starting printAllElements
+[INFO ] 2026-06-05 19:54:37.711 [main] MainTest - Chrome launched 
+[INFO ] 2026-06-05 19:54:41.135 [main] MainTest - Navigated to: https://www.microsoft.com/en-us/
+[INFO ] 2026-06-05 19:54:43.977 [main] MainPage - Clicking on an Element : Windows_X
+[INFO ] 2026-06-05 19:54:45.044 [main] MainPage - Clicking on an Element : AboutWindows_C
+[INFO ] 2026-06-05 19:54:46.052 [main] MainPage - Finding Element : listElements_C
+[INFO ] 2026-06-05 19:54:46.058 [main] WindowsPage - 9
+[INFO ] 2026-06-05 19:54:46.071 [main] WindowsPage - List Item Text : Microsoft 365
+[INFO ] 2026-06-05 19:54:46.092 [main] WindowsPage - List Item Text : Azure
+[INFO ] 2026-06-05 19:54:46.109 [main] WindowsPage - List Item Text : Copilot
+[INFO ] 2026-06-05 19:54:46.121 [main] WindowsPage - List Item Text : Windows
+[INFO ] 2026-06-05 19:54:46.140 [main] WindowsPage - List Item Text : Surface
+[INFO ] 2026-06-05 19:54:46.153 [main] WindowsPage - List Item Text : XBOX
+[INFO ] 2026-06-05 19:54:46.174 [main] WindowsPage - List Item Text : Deals
+[INFO ] 2026-06-05 19:54:46.189 [main] WindowsPage - List Item Text : Small Business
+[INFO ] 2026-06-05 19:54:46.203 [main] WindowsPage - List Item Text : Support
+[INFO ] 2026-06-05 19:54:46.210 [main] WindowsPage - About Windows Items were listed successfuly
+[INFO ] 2026-06-05 19:54:46.210 [main] printAllElements - Finishing printAllElements
+[INFO ] 2026-06-05 19:54:46.373 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:54:46.374 [main] printAllElements - Skipping chrome printAllElements execution as the run mode is NO
+[INFO ] 2026-06-05 19:54:46.374 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:54:46.375 [main] printAllElements - Starting printAllElements
+[INFO ] 2026-06-05 19:54:48.635 [main] MainTest - Firefox launched 
+[INFO ] 2026-06-05 19:54:51.626 [main] MainTest - Navigated to: https://www.microsoft.com/en-us/
+[INFO ] 2026-06-05 19:54:52.612 [main] MainPage - Clicking on an Element : Windows_X
+[INFO ] 2026-06-05 19:54:53.705 [main] MainPage - Clicking on an Element : AboutWindows_C
+[INFO ] 2026-06-05 19:54:54.711 [main] MainPage - Finding Element : listElements_C
+[INFO ] 2026-06-05 19:54:54.713 [main] WindowsPage - 9
+[INFO ] 2026-06-05 19:54:54.728 [main] WindowsPage - List Item Text : Microsoft 365
+[INFO ] 2026-06-05 19:54:54.747 [main] WindowsPage - List Item Text : Azure
+[INFO ] 2026-06-05 19:54:54.763 [main] WindowsPage - List Item Text : Copilot
+[INFO ] 2026-06-05 19:54:54.784 [main] WindowsPage - List Item Text : Windows
+[INFO ] 2026-06-05 19:54:54.805 [main] WindowsPage - List Item Text : Surface
+[INFO ] 2026-06-05 19:54:54.823 [main] WindowsPage - List Item Text : XBOX
+[INFO ] 2026-06-05 19:54:54.840 [main] WindowsPage - List Item Text : Deals
+[INFO ] 2026-06-05 19:54:54.859 [main] WindowsPage - List Item Text : Small Business
+[INFO ] 2026-06-05 19:54:54.878 [main] WindowsPage - List Item Text : Support
+[INFO ] 2026-06-05 19:54:54.885 [main] WindowsPage - About Windows Items were listed successfuly
+[INFO ] 2026-06-05 19:54:54.885 [main] printAllElements - Finishing printAllElements
+[INFO ] 2026-06-05 19:54:55.441 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:54:55.473 [main] searchBox - Starting searchBox
+[INFO ] 2026-06-05 19:54:56.041 [main] MainTest - Chrome launched 
+[INFO ] 2026-06-05 19:54:59.491 [main] MainTest - Navigated to: https://www.microsoft.com/en-us/
+[INFO ] 2026-06-05 19:54:59.582 [main] MainPage - Clicking on an Element : SearchBoxHomePage_X
+[INFO ] 2026-06-05 19:54:59.618 [main] MainPage - typing in an Element : SearchInputHomePage_C entered the value as : Visual Studio Professional 2026
+[INFO ] 2026-06-05 19:55:00.640 [main] MainPage - Finding Elements : ListArticlesHomePage_C
+[INFO ] 2026-06-05 19:55:01.999 [main] HomePage - Visual Studio Professional 2026 Found and Clicked
+[INFO ] 2026-06-05 19:55:01.999 [main] searchBox - Finishing searchBox
+[INFO ] 2026-06-05 19:55:02.155 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:55:02.156 [main] searchBox - Skipping chrome searchBox execution as the run mode is NO
+[INFO ] 2026-06-05 19:55:02.156 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:55:02.157 [main] searchBox - Starting searchBox
+[INFO ] 2026-06-05 19:55:04.377 [main] MainTest - Firefox launched 
+[INFO ] 2026-06-05 19:55:07.816 [main] MainTest - Navigated to: https://www.microsoft.com/en-us/
+[INFO ] 2026-06-05 19:55:08.177 [main] MainPage - Clicking on an Element : SearchBoxHomePage_X
+[INFO ] 2026-06-05 19:55:08.189 [main] MainPage - typing in an Element : SearchInputHomePage_C entered the value as : Visual Studio Professional 2026
+[INFO ] 2026-06-05 19:55:09.196 [main] MainPage - Finding Elements : ListArticlesHomePage_C
+[INFO ] 2026-06-05 19:55:10.611 [main] HomePage - Visual Studio Professional 2026 Found and Clicked
+[INFO ] 2026-06-05 19:55:10.611 [main] searchBox - Finishing searchBox
+[INFO ] 2026-06-05 19:55:11.174 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:55:11.206 [main] priceComparison - Starting priceComparison
+[INFO ] 2026-06-05 19:55:11.748 [main] MainTest - Chrome launched 
+[INFO ] 2026-06-05 19:55:16.135 [main] MainTest - Navigated to: https://www.microsoft.com/en-us/
+[INFO ] 2026-06-05 19:55:16.211 [main] MainPage - Clicking on an Element : SearchBoxHomePage_X
+[INFO ] 2026-06-05 19:55:16.249 [main] MainPage - typing in an Element : SearchInputHomePage_C entered the value as : Visual Studio Professional 2026
+[INFO ] 2026-06-05 19:55:17.274 [main] MainPage - Finding Elements : ListArticlesHomePage_C
+[INFO ] 2026-06-05 19:55:18.251 [main] HomePage - Visual Studio Professional 2026 Found and Clicked
+[INFO ] 2026-06-05 19:55:18.338 [main] MainPage - Getting text on Element : $499.00
+[INFO ] 2026-06-05 19:55:18.339 [main] SoftwareVisualStudioPage - Price Stored: $499.00
+[INFO ] 2026-06-05 19:55:18.386 [main] MainPage - Clicking on an Element : BuyBox_ID
+[INFO ] 2026-06-05 19:55:18.387 [main] CartPage - On getCartPrice
+[INFO ] 2026-06-05 19:55:21.975 [main] CartPage - switching to frame with: purchase-frame
+[INFO ] 2026-06-05 19:55:21.986 [main] MainPage - Getting text on Element : $499.00
+[INFO ] 2026-06-05 19:55:21.986 [main] CartPage - Cart price Stored: $499.00
+[INFO ] 2026-06-05 19:55:21.986 [main] CartPage - On ComparePrices
+[INFO ] 2026-06-05 19:55:21.986 [main] CartPage - Same price
+[INFO ] 2026-06-05 19:55:21.987 [main] priceComparison - Finishing priceComparison
+[INFO ] 2026-06-05 19:55:22.130 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:55:22.131 [main] priceComparison - Skipping chrome priceComparison execution as the run mode is NO
+[INFO ] 2026-06-05 19:55:22.132 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:55:22.132 [main] priceComparison - Starting priceComparison
+[INFO ] 2026-06-05 19:55:24.412 [main] MainTest - Firefox launched 
+[INFO ] 2026-06-05 19:55:27.369 [main] MainTest - Navigated to: https://www.microsoft.com/en-us/
+[INFO ] 2026-06-05 19:55:27.722 [main] MainPage - Clicking on an Element : SearchBoxHomePage_X
+[INFO ] 2026-06-05 19:55:27.746 [main] MainPage - typing in an Element : SearchInputHomePage_C entered the value as : Visual Studio Professional 2026
+[INFO ] 2026-06-05 19:55:28.755 [main] MainPage - Finding Elements : ListArticlesHomePage_C
+[INFO ] 2026-06-05 19:55:30.349 [main] HomePage - Visual Studio Professional 2026 Found and Clicked
+[INFO ] 2026-06-05 19:55:30.366 [main] MainPage - Getting text on Element : $499.00
+[INFO ] 2026-06-05 19:55:30.366 [main] SoftwareVisualStudioPage - Price Stored: $499.00
+[INFO ] 2026-06-05 19:55:30.455 [main] MainPage - Clicking on an Element : BuyBox_ID
+[INFO ] 2026-06-05 19:55:30.455 [main] CartPage - On getCartPrice
+[INFO ] 2026-06-05 19:55:31.963 [main] CartPage - switching to frame with: purchase-frame
+[INFO ] 2026-06-05 19:55:32.908 [main] MainPage - Getting text on Element : $499.00
+[INFO ] 2026-06-05 19:55:32.908 [main] CartPage - Cart price Stored: $499.00
+[INFO ] 2026-06-05 19:55:32.908 [main] CartPage - On ComparePrices
+[INFO ] 2026-06-05 19:55:32.908 [main] CartPage - Same price
+[INFO ] 2026-06-05 19:55:32.908 [main] priceComparison - Finishing priceComparison
+[INFO ] 2026-06-05 19:55:33.387 [main] MainTest - Test Execution Completed
+[INFO ] 2026-06-05 19:55:33.415 [main] requestRestAssured - Starting requestRestAssured
+[INFO ] 2026-06-05 19:55:33.424 [main] ApiRequests - Starting requestRestAssured
+[INFO ] 2026-06-05 19:55:34.833 [main] ApiRequests - Pokemon Count Size: 300
+[INFO ] 2026-06-05 19:55:34.892 [main] ApiRequests - Pokemon ID:7 Name: squirtle
+[INFO ] 2026-06-05 19:55:34.954 [main] ApiRequests - Pokemon ID:21 Name: spearow
+[INFO ] 2026-06-05 19:55:34.974 [main] ApiRequests - Pokemon ID:27 Name: sandshrew
+[INFO ] 2026-06-05 19:55:34.980 [main] ApiRequests - Pokemon ID:28 Name: sandslash
+[INFO ] 2026-06-05 19:55:35.178 [main] ApiRequests - Pokemon ID:79 Name: slowpoke
+[INFO ] 2026-06-05 19:55:35.181 [main] ApiRequests - Pokemon ID:80 Name: slowbro
+[INFO ] 2026-06-05 19:55:35.201 [main] ApiRequests - Pokemon ID:86 Name: seel
+[INFO ] 2026-06-05 19:55:35.215 [main] ApiRequests - Pokemon ID:90 Name: shellder
+[INFO ] 2026-06-05 19:55:35.301 [main] ApiRequests - Pokemon ID:117 Name: seadra
+[INFO ] 2026-06-05 19:55:35.309 [main] ApiRequests - Pokemon ID:119 Name: seaking
+[INFO ] 2026-06-05 19:55:35.312 [main] ApiRequests - Pokemon ID:120 Name: staryu
+[INFO ] 2026-06-05 19:55:35.315 [main] ApiRequests - Pokemon ID:121 Name: starmie
+[INFO ] 2026-06-05 19:55:35.322 [main] ApiRequests - Pokemon ID:123 Name: scyther
+[INFO ] 2026-06-05 19:55:35.392 [main] ApiRequests - Pokemon ID:143 Name: snorlax
+[INFO ] 2026-06-05 19:55:35.449 [main] ApiRequests - Pokemon ID:161 Name: sentret
+[INFO ] 2026-06-05 19:55:35.466 [main] ApiRequests - Pokemon ID:167 Name: spinarak
+[INFO ] 2026-06-05 19:55:35.517 [main] ApiRequests - Pokemon ID:185 Name: sudowoodo
+[INFO ] 2026-06-05 19:55:35.526 [main] ApiRequests - Pokemon ID:188 Name: skiploom
+[INFO ] 2026-06-05 19:55:35.540 [main] ApiRequests - Pokemon ID:191 Name: sunkern
+[INFO ] 2026-06-05 19:55:35.545 [main] ApiRequests - Pokemon ID:192 Name: sunflora
+[INFO ] 2026-06-05 19:55:35.565 [main] ApiRequests - Pokemon ID:199 Name: slowking
+[INFO ] 2026-06-05 19:55:35.598 [main] ApiRequests - Pokemon ID:208 Name: steelix
+[INFO ] 2026-06-05 19:55:35.601 [main] ApiRequests - Pokemon ID:209 Name: snubbull
+[INFO ] 2026-06-05 19:55:35.608 [main] ApiRequests - Pokemon ID:212 Name: scizor
+[INFO ] 2026-06-05 19:55:35.611 [main] ApiRequests - Pokemon ID:213 Name: shuckle
+[INFO ] 2026-06-05 19:55:35.616 [main] ApiRequests - Pokemon ID:215 Name: sneasel
+[INFO ] 2026-06-05 19:55:35.623 [main] ApiRequests - Pokemon ID:218 Name: slugma
+[INFO ] 2026-06-05 19:55:35.628 [main] ApiRequests - Pokemon ID:220 Name: swinub
+[INFO ] 2026-06-05 19:55:35.650 [main] ApiRequests - Pokemon ID:227 Name: skarmory
+[INFO ] 2026-06-05 19:55:35.670 [main] ApiRequests - Pokemon ID:234 Name: stantler
+[INFO ] 2026-06-05 19:55:35.674 [main] ApiRequests - Pokemon ID:235 Name: smeargle
+[INFO ] 2026-06-05 19:55:35.683 [main] ApiRequests - Pokemon ID:238 Name: smoochum
+[INFO ] 2026-06-05 19:55:35.700 [main] ApiRequests - Pokemon ID:245 Name: suicune
+[INFO ] 2026-06-05 19:55:35.722 [main] ApiRequests - Pokemon ID:254 Name: sceptile
+[INFO ] 2026-06-05 19:55:35.744 [main] ApiRequests - Pokemon ID:260 Name: swampert
+[INFO ] 2026-06-05 19:55:35.759 [main] ApiRequests - Pokemon ID:266 Name: silcoon
+[INFO ] 2026-06-05 19:55:35.774 [main] ApiRequests - Pokemon ID:273 Name: seedot
+[INFO ] 2026-06-05 19:55:35.779 [main] ApiRequests - Pokemon ID:275 Name: shiftry
+[INFO ] 2026-06-05 19:55:35.784 [main] ApiRequests - Pokemon ID:277 Name: swellow
+[INFO ] 2026-06-05 19:55:35.797 [main] ApiRequests - Pokemon ID:283 Name: surskit
+[INFO ] 2026-06-05 19:55:35.803 [main] ApiRequests - Pokemon ID:285 Name: shroomish
+[INFO ] 2026-06-05 19:55:35.807 [main] ApiRequests - Pokemon ID:287 Name: slakoth
+[INFO ] 2026-06-05 19:55:35.812 [main] ApiRequests - Pokemon ID:289 Name: slaking
+[INFO ] 2026-06-05 19:55:35.817 [main] ApiRequests - Pokemon ID:292 Name: shedinja
+[INFO ] 2026-06-05 19:55:35.834 [main] ApiRequests - Pokemon ID:300 Name: skitty
+[INFO ] 2026-06-05 19:55:35.834 [main] ApiRequests - Request Passed
+[INFO ] 2026-06-05 19:55:35.834 [main] ApiRequests - Finishing requestRestAssured
+[INFO ] 2026-06-05 19:55:35.834 [main] requestRestAssured - Finishing requestRestAssured
+[INFO ] 2026-06-05 19:55:35.835 [main] requestRestAssured - Skipping requestRestAssured execution as the run mode is NO
