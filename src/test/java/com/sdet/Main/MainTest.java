@@ -23,9 +23,8 @@ import com.sdet.utilities.ExcelReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class MainTest {
-	
-	
-	protected WebDriver driver;
+
+	// protected WebDriver driver;
 	public ExcelReader excel = new ExcelReader(".//src//test//resources//excel//testdata.xlsx");
 	public Properties config = new Properties();
 	public Properties OR = new Properties();
@@ -33,14 +32,23 @@ public class MainTest {
 	public WebDriverWait wait;
 	public static Logger log = LogManager.getLogger();
 
+	private static ThreadLocal<WebDriver> driverTL = new ThreadLocal<>();
+	private static ThreadLocal<WebDriverWait> waitTL = new ThreadLocal<>();
+
+	public static WebDriver getDriver() {
+		return driverTL.get();
+	}
+
+	public static WebDriverWait getWait() {
+		return waitTL.get();
+	}
+
 	public void SetUp(String Browser) {
 
-		//FirefoxDriver driver = new FirefoxDriver();
-		
 		try {
 			fis = new FileInputStream(
 					System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\Config.properties");
-								
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -54,12 +62,12 @@ public class MainTest {
 		}
 
 		if (Browser.equals("firefox")) {
-			
+
 			WebDriverManager.firefoxdriver().avoidBrowserDetection().setup();
 			FirefoxProfile customProfile = new FirefoxProfile();
 			customProfile.setPreference("dom.disable_beforeunload", true);
-			driver = new FirefoxDriver();
-			 
+			// driver = new FirefoxDriver());
+			driverTL.set(new FirefoxDriver());
 			System.out.println("Firefox launched ");
 			log.info("Firefox launched ");
 		}
@@ -69,25 +77,33 @@ public class MainTest {
 			prefs.put("profile.default_content_setting_values.notifications", 2);
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", prefs);
-			
-			driver = new ChromeDriver();
+
+			// driver = new ChromeDriver();
+			driverTL.set(new ChromeDriver(options));
 			System.out.println("Chrome launched ");
 			log.info("Chrome launched ");
 		}
-		driver.get(config.getProperty("testsiteurl"));
+		getDriver().get(config.getProperty("testsiteurl"));
 		System.out.println("Navigated to: " + config.getProperty("testsiteurl"));
 		log.info("Navigated to: " + config.getProperty("testsiteurl"));
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(config.getProperty("implicit.wait"))));
-		wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
-
+		getDriver().manage().window().maximize();
+		getDriver().manage().timeouts()
+				.implicitlyWait(Duration.ofSeconds(Integer.parseInt(config.getProperty("implicit.wait"))));
+		// wait = new
+		// WebDriverWait(getDriver(),Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
+		waitTL.set(new WebDriverWait(getDriver(),
+				Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait")))));
 	}
 
 	@AfterMethod
 	public void tearDown() {
-			if(driver!=null){
-			driver.quit();
+		if (getDriver() != null) {
+			getDriver().quit();
 			log.info("Test Execution Completed");
-			}
+		}
+
+		
+		driverTL.remove();
+		waitTL.remove();
 	}
 }

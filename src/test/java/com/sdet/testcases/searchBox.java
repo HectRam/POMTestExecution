@@ -22,7 +22,7 @@ public class searchBox extends MainTest{
 		log.info("Starting searchBox");
 		
 		SetUp(browser);
-		HomePage homeP = new HomePage(driver);
+		HomePage homeP = new HomePage(getDriver());
 		homeP.clickOnSearch();
 		homeP.searchFor(searchItem);
 		

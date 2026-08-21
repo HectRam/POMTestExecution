@@ -48,8 +48,13 @@ public class ExtentManager extends MainPage {
 
 		Date d = new Date();
 		fileName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
+		
+		if (getDriver() == null) {
+			log.warn("Unable to capture screenshot because WebDriver is null");
+			return;
+		}
 
-		File screeshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File screeshot = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 		log.info("Capturing Screenshot: " + fileName);
 		FileUtils.copyFile(screeshot,
 				new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\" + fileName));

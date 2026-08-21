@@ -23,11 +23,11 @@ public class printAllElements extends MainTest {
 		log.info("Starting printAllElements");
 
 		SetUp(browser);
-		HomePage mainP = new HomePage(driver);
+		HomePage mainP = new HomePage(getDriver());
 		WindowsPage windowsP = mainP.goToWindows();
-		Thread.sleep(1000);
-		windowsP.aboutWindowsMenuClickExpand();
-		Thread.sleep(1000);
+		
+		windowsP.allMicrosoftClickExpand();
+		
 		windowsP.aboutWindowsMenulValidateAllItems();
 
 		log.info("Finishing printAllElements");

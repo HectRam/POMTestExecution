@@ -26,11 +26,18 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 
 	public static ExtentTest test;
 
+	public static ThreadLocal<ExtentTest> extentTestTL = new ThreadLocal<ExtentTest>();
+	
+	public static ExtentTest getExtent() {
+		return extentTestTL.get();
+	}
+	
 	public void onTestStart(ITestResult result) {
 
 		test = extent
 				.createTest(result.getTestClass().getName() + "     @TestCase : " + result.getMethod().getMethodName());
-
+		
+		extentTestTL.set(test);
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -38,7 +45,7 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 		String methodName = result.getMethod().getMethodName();
 		String logText = "<b>" + "TEST CASE:- " + methodName.toUpperCase() + " PASSED" + "</b>";
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
-		test.pass(m);
+		getExtent().pass(m);
 
 	}
 
@@ -54,11 +61,11 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 		String methodName = result.getMethod().getMethodName();
 		String logText = "<b>" + "TEST CASE:- " + methodName.toUpperCase() + " FAILED" + "</b>";
 
-		test.fail("<b><font color=red>" + "Screenshot of failure" + "</font></b><br>",
+		getExtent().fail("<b><font color=red>" + "Screenshot of failure" + "</font></b><br>",
 				MediaEntityBuilder.createScreenCaptureFromPath(ExtentManager.fileName).build());
 
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
-		test.log(Status.FAIL, m);
+		getExtent().log(Status.FAIL, m);
 
 	}
 
@@ -66,7 +73,7 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 		String methodName = result.getMethod().getMethodName();
 		String logText = "<b>" + "Test Case:- " + methodName + " Skipped" + "</b>";
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
-		test.skip(m);
+		getExtent().skip(m);
 
 	}
 

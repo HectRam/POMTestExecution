@@ -26,7 +26,7 @@ public class priceComparison extends MainTest {
 		
 
 		SetUp(browser);
-		HomePage homeP = new HomePage(driver);
+		HomePage homeP = new HomePage(getDriver());
 		homeP.clickOnSearch();
 		SoftwareVisualStudioPage sVSP = homeP.searchFor(searchItem);
 		//sVSP.modalPopUpRemoval();

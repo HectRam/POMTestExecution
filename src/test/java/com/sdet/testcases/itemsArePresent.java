@@ -22,7 +22,7 @@ public class itemsArePresent extends MainTest {
 
 		SetUp(browser);
 
-		HomePage mainP = new HomePage(driver);
+		HomePage mainP = new HomePage(getDriver());
 		mainP.validateHomePageMenuItems();
 
 		log.info("Finishing itemsArePresent");

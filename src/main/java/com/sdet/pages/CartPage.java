@@ -12,7 +12,7 @@ public class CartPage extends MainPage{
 	
 	public CartPage(WebDriver driver) {
 		super(driver);
-		loadProperties();
+		
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -23,7 +23,7 @@ public class CartPage extends MainPage{
 	}
 	
 	public void switchFrame(String element) {
-		driver.switchTo().frame(element);
+		getDriver().switchTo().frame(element);
 		log.info("switching to frame with: "+element);
 		System.out.println("switching to frame: "+element);
 	}
@@ -34,7 +34,7 @@ public class CartPage extends MainPage{
 		price2 = getTxt("GetPrice2_X");
 		System.out.println("Cart price Stored: " + price2);
 		log.info("Cart price Stored: " + price2);
-		ExtentListeners.test.log(Status.INFO, "Cart price Stored: " + price2);
+		ExtentListeners.getExtent().log(Status.INFO, "Cart price Stored: " + price2);
 		return price2;
 	}
 	
@@ -43,11 +43,11 @@ public class CartPage extends MainPage{
 		if (price.substring(0, 5).equals(price2.substring(0, 5))) {
 			log.info("Same price");
 			System.out.println("Same price");
-			ExtentListeners.test.log(Status.PASS, "Same price");
+			ExtentListeners.getExtent().log(Status.PASS, "Same price");
 		} else {
 			// Assert.assertEquals(true, pricecorr.equals(pricecorr2));
 			log.info("Different price");
-			ExtentListeners.test.log(Status.FAIL, "Different price");
+			ExtentListeners.getExtent().log(Status.FAIL, "Different price");
 			Assert.fail("Different price");
 		}
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="POMTestExecution">
+<suite name="POMTestExecution" parallel="tests" thread-count="2" verbose="1">
 	
 	<listeners>
 	<listener class-name="com.sdet.extentlisteners.ExtentListeners"/>
@@ -35,4 +35,5 @@
 			<class name="com.sdet.testcases.requestRestAssured" />
 		</classes>
 	</test> <!-- Test5 -->
+	
 </suite> <!-- Suite -->

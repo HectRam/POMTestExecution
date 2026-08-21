@@ -32,7 +32,7 @@ public class ApiRequests extends MainTest{
 			int count = js.getInt("results.size()");
 			System.out.println("Pokemon Count Size: " + count);
 			log.info("Pokemon Count Size: " + count);
-			ExtentListeners.test.log(Status.INFO, "Pokemon Count Size: " + count);
+			ExtentListeners.getExtent().log(Status.INFO, "Pokemon Count Size: " + count);
 			for (int i = 0; i < count; i++) {
 				String s = js.get("results[" + i + "].name");
 				char r = ' ';
@@ -41,15 +41,15 @@ public class ApiRequests extends MainTest{
 				if (r == 's') {
 					log.info("Pokemon ID:" + (i + 1) + " Name: " + s);
 					System.out.println("Pokemon ID:" + (i + 1) + " Name: " + s);
-					ExtentListeners.test.log(Status.INFO, "Pokemon ID:" + (i + 1) + " Name: " + s);
+					ExtentListeners.getExtent().log(Status.INFO, "Pokemon ID:" + (i + 1) + " Name: " + s);
 				}
 
 			}
 			log.info("Request Passed");
-			ExtentListeners.test.log(Status.PASS, "Request Passed");
+			ExtentListeners.getExtent().log(Status.PASS, "Request Passed");
 		} catch (Throwable t) {
 			log.error("There was an error on the request: " + t.getMessage());
-			ExtentListeners.test.log(Status.FAIL, "There was an error on the request: " + t.getMessage());
+			ExtentListeners.getExtent().log(Status.FAIL, "There was an error on the request: " + t.getMessage());
 			Assert.fail(t.getMessage());
 		}
 		log.info("Finishing requestRestAssured");
